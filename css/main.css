@@ -20,22 +20,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
-    
+
 img {
     max-width: 100%;
 }
-    
+
 a {
     text-decoration: none;
 }
 
+
+/* -------------- HEADER --------------- */
 header .space {
         width: 95.5%;
         margin: auto;
 }
 
 header nav {
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 header ul {
@@ -70,9 +72,7 @@ ul li .session {
     font-weight: bold;
 }
 
-
-
-
+/* -------------- MAIN --------------- */
 main {
     text-align: center;
     margin-top: 115px;
@@ -87,7 +87,7 @@ main {
 main .main-input {
     display: flex;
     justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 main .main-input-container {
@@ -145,12 +145,19 @@ main .main-input .micro-icon {
     cursor: pointer;
 }
 
+.google-language {
+    margin-top: 22px;
+}
+
+.google-language a {
+    color: #1a0dab;
+}
 
 
-
+/* ----------- FOOTER --------------- */
 .space-footer {
     /* padding: 20px 30px; */
-    margin-top: 180px;
+    margin-top: 143px;
     background: var(--grey-color);
     line-height: 40px;
 }
