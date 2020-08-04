@@ -2,7 +2,8 @@
     --grey-color: #F2F2F2;
     --button-color: #4285f4;
     --button-content: #5f6368;
-    --border-color: #e4e4e4;
+    --border-color: #dfe1e5;
+    --shadow-color: #20212447;
 }
 
 * {
@@ -28,39 +29,39 @@ a {
     text-decoration: none;
 }
 
-.space {
-    width: 95.5%;
-    margin: auto;
+header .space {
+        width: 95.5%;
+        margin: auto;
 }
 
-nav {
+header nav {
     margin-top: 20px;
 }
 
-ul {
+header ul {
     display: flex;  
     justify-content: flex-end;
 }
 
-li {
+header ul li {
     padding-right: 22px;
     list-style: none;
 }
 
-li:last-child {
+header ul li:last-child {
     padding-right: 0;
 }
 
-ul li a {
+header ul li a {
     font-size: 13px;
     color: #000;
 }
 
-.link {
+ul li .link {
     line-height: 15px;
 }
 
-.session {
+ul li .session {
     padding: 6px 12px;
     border: 1px solid var(--button-color);
     border-radius: 2px;
@@ -72,9 +73,84 @@ ul li a {
 
 
 
+main {
+    text-align: center;
+    margin-top: 115px;
+}
+
+.logo-img {
+    height: 92px;
+    width: 272px;
+    margin-bottom: 25px;
+}
+
+main .main-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 540px;
+    border-radius: 100px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 var(--shadow-color);
+    border-color: #dfe1e500;
+}
+
+main .main-input input {
+    width: 450px;
+    height: 44px;
+    padding-left: 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+    
+main .main-input .search-icon {
+    line-height: 13px;
+    padding-left: 8px;
+}
+
+main .main-input .micro-icon {
+    line-height: 13px;
+    padding-right: 4px;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;   
+}
+
+.main-buttons button {
+    height: 36px;
+    background-color: var(--grey-color);
+    border: 1px solid var(--grey-color);
+    font-size: 14px;
+    color: var(--button-content);
+    border-radius: 4px;
+    padding: 0 15px;
+}
+
+.main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+
+
+
 .space-footer {
     /* padding: 20px 30px; */
-    margin-top: 45px;
+    margin-top: 180px;
     background: var(--grey-color);
     line-height: 40px;
 }
